@@ -32,3 +32,6 @@ pip install Flask
 ```bash
 touch .gitignore
 ```
+
+- Setting CORS in Flask
+  https://flask-cors.readthedocs.io/en/latest/
