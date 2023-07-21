@@ -35,3 +35,9 @@ touch .gitignore
 
 - Setting CORS in Flask
   https://flask-cors.readthedocs.io/en/latest/
+
+- Create Application header layout using [React Helmet](https://www.npmjs.com/package/react-helmet "visit react-helmet")
+
+```bash
+npm install --save react-helmet
+```

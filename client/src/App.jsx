@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import LandingPage from './pages/LandingPage';
 
 const App = () => {
 
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <>
+    <LandingPage />
       {(data.length === 0) ? (
         <p>Loading...</p>
       ) : (
