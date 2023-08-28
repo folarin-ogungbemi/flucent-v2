@@ -10,3 +10,15 @@ cd client
 npm install
 npm run dev
 ```
+
+- Page scroll behaviour and active link
+  https://www.npmjs.com/package/react-scroll
+
+```bash
+    npm install react-scroll
+```
+
+
+### Error 1
+Could not find a declaration file for module 'react-scroll'
+
