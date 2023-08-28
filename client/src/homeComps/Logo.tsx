@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo:React.FC = () => {
   return (
-    <div className='italic'>Flucent Dev</div>
+    <h1 className='italic'>Flucent Dev</h1>
   )
 }
 
