@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    :root[data-theme='light'] {
+            --font-md-color: #0a031ad9; /* purple alpha(85%) */
+            --font-sm-color: #0a031a;/* purple */
+            --o-font-color: #cccccc; /* gray */
+            --link-color: #0a031ad9; /* purple alpha(85%) */
+            --fill-color: #fff; /* white */
+            --o-fill-color: #0a031a1a;/* purple */
+            --shadow-color:#00000033; /*black alpha(20%) */
+        }
+        
+    :root[data-theme='dark'] {
+            --font-md-color: #ccccccd9; /* gray alpha(85%) */
+            --font-sm-color: #cccccc; /* gray */
+            --o-font-color: #0a031a; /* purple */
+            --link-color: #FFF;/* White */
+            --fill-color: #0a031a;/* purple */
+            --o-fill-color: #ffffff1a;/* white */
+            --shadow-color: #F5F5DC; /* Beige */
+        }
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, #ec4899d3, #8a2be2d3);
+    transition: all 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
+.nav-link.active{
+    background: linear-gradient(to right, #ec4899d3, #8a2be2d3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
