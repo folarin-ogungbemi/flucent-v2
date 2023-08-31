@@ -13,7 +13,6 @@ import {
   dataAnalysisT,
   versionControl_cloudServicesT,
   otherT} from '../components/SkillsData'
-import ProjectData from '../components/ProjectData'
 
 import About from '../sections/About';
 import Projects from '../sections/Projects'
@@ -70,7 +69,7 @@ const TechnologyDict:Array<{[key:string]:Array<ITechnology>}> =[
             <div className='col-span-2'>
               <Header/>
             </div>
-            <aside className='flex flex-col justify-between max-w-[35%] 2xl:w-[25%] bg-[rgba(0,0,0,0.05)] pl-5 xl:fixed xl:h-[100dvh]'>
+            <aside className='flex flex-col justify-between w-full xl:max-w-[35%] 2xl:w-[25%] bg-[rgba(0,0,0,0.05)] pl-5 xl:fixed xl:h-[100dvh]'>
               <div>
                 <Intro/>
                 <Skills 
