@@ -19,7 +19,7 @@ const Header:React.FC = () => {
       setPrevScrollPos(currentScrollPos);
 
       currentScrollPos === 0 ? (navBar.style.boxShadow = 'none', navBar.style.background = 'transparent')
-      : (navBar.style.boxShadow = '0px 0.1px 3px 0.5px #0000001a', navBar.style.background = '#fff')
+      : (navBar.style.boxShadow = '0px 0.1px 3px 0.5px #0000001a', navBar.style.background = 'var(--fill-color)')
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -30,7 +30,7 @@ const Header:React.FC = () => {
   }, [prevScrollPos, visible]);
 
   return (
-    <header className='flex gap-2 fixed h-fit w-full max-w-[1400px] p-5 z-20 transition-all delay-200 duration-500 ease-in-out'>
+    <header className='flex gap-2 fixed h-fit w-full max-w-[1400px] p-5 z-20 transition-[top] delay-200 duration-500 ease-out'>
       <div className='block w-[35%]'>
         <Logo/>
       </div>
