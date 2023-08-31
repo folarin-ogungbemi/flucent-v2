@@ -11,7 +11,7 @@ const Projects:React.FC = () => {
         <h3 className='text-xl font-bold mb-5'>Projects</h3>
         <div className='block'>
             {projectData.map((projects, projectsIndex) => 
-            <Link to={projects.github} className='grid grid-cols-3 mb-5 hover:bg-[#0000000d] hover:backdrop-blur-lg hover:drop-shadow-md p-3 rounded-md group' key={projectsIndex}>
+            <Link to={projects.github} target='_blank' className='grid grid-cols-3 mb-5 hover:bg-[#0000000d] hover:backdrop-blur-lg hover:drop-shadow-md p-3 rounded-md group' key={projectsIndex}>
                 <div
                 style={{backgroundImage:`url(${projects.image})`}}
                 className='bg-cover bg-center w-48 h-24 border border-slate-100 rounded-md'>

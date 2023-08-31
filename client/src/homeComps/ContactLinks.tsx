@@ -37,7 +37,7 @@ const ContactLinks:React.FC= () => {
     <ul className='flex gap-4 '>
         {contacts.map((contact, contactIndex) => 
         <li key={contactIndex} className='transition delay-100 ease-in-out hover:-translate-y-2'>
-            <NavLink to={contact.url} className='text-2xl cursor-pointer' style={{ color: contact.color }}>{contact.name}</NavLink>
+            <NavLink to={contact.url} target='_blank' className='text-2xl cursor-pointer' style={{ color: contact.color }}>{contact.name}</NavLink>
         </li>
         )}
     </ul>
