@@ -59,3 +59,7 @@ body{
     background-clip: text;
     color: transparent;
 }
+
+.switch-in-transition{
+    transition: all 1s ease-in-out;
+}
