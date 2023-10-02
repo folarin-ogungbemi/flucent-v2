@@ -6,7 +6,7 @@ const About:React.FC = () => {
     <section id='about' className='mb-10'>
       <h3 className='text-xl font-bold mb-3'>About</h3>
       <div className='flex'>
-        <div className='w-[60%] mb-5 text-skin-font'>
+        <div className='w-[60%] mb-5 text-skin-fontMd'>
           <div className='mb-10 space-y-2'>
             <p>
             I am keen about analysing data with Python and Utilising Django framework to build the server side for software applications
@@ -18,7 +18,7 @@ const About:React.FC = () => {
                 My programming journey sets me on the path of Leveraging technology to solve real-world challenges. This is my focus.
             </p>
           </div>
-          <button className='rounded-full p-3 border'>Read more ...</button>
+          <button className='rounded-full p-3 border button hover:text-skin-link z-1'>Read more ...</button>
         </div>
         <div className='w-fit mx-auto'>
           <img src={photo} alt="folarin's picture" className='w-[140px] h-[180px] rounded-md'/>

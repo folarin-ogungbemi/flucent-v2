@@ -12,6 +12,8 @@
             --fill-color: #fff; /* white */
             --o-fill-color: #0a031a1a;/* purple */
             --shadow-color:#00000033; /*black alpha(20%) */
+            --button-text-col:#0a031a;
+            --button-bg-col:#0a031a;
         }
         
     :root[data-theme='dark'] {
@@ -22,6 +24,8 @@
             --fill-color: #0a031a;/* purple */
             --o-fill-color: #ffffff1a;/* white */
             --shadow-color: #F5F5DC; /* Beige */
+            --button-text-col:#FFF;
+            --button-bg-col:#FFF;
         }
 }
 
@@ -62,4 +66,28 @@ body{
 
 .switch-in-transition{
     transition: all 1s ease-in-out;
+}
+
+.button {
+    position: relative;
+    isolation: isolate;
+    background: var(--fill-color);
+    color: var(--button-text-col);
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    scale: 0 1;
+    background: linear-gradient(to right, #ec4899d3, #8a2be2d3);
+    border-radius: 5rem;
+    transition: scale 450ms;
+}
+
+.button:hover::after,
+.button:focus-visible::after {
+    transform-origin: center;
+    scale: 1 1;
 }
