@@ -2,8 +2,8 @@ import React from 'react'
 
 const Logo:React.FC = () => {
   return (
-    <h1 className='italic'>Flucent Dev</h1>
+    <h1 className='italic'>Folarin</h1>
   )
 }
 
-export default Logo
+export default Logo;
